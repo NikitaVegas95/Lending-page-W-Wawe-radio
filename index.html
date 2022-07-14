@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="icon" href="img/svg/favicon/favicon.svg" type="imege/svg+xm">
+  <title>W-Wave Радио</title>
 </head>
 <body>
-
+  <header class="header">
+    <div class="container">
+      <a class="header__logo-link" href="#">
+        <picture>
+          <source srcset="img/svg/logo/logo-320.svg" media="(max-width: 320px)">
+          <source srcset="img/svg/logo/logo-768.svg" media="(max-width: 768px)">
+          <source srcset="img/svg/logo/logo-1024.svg" media="(max-width: 1024px)">
+          <img class="header__logo" src="img/svg/logo/logo-desktop.svg" alt="Логотип W-Wave Радио">
+        </picture>
+      </a>
+      <nav class="header__nav">
+        <ul class="list-reset header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Подкасты</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Передачи</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Гости</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Плейлисты</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">О&nbsp;нас</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns-wrapper">
+        <button class="btn-reset header__search-btn"></button>
+        <button class="btn-reset header__login-btn">Вход</button>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="list-reset header__sub-nav__list">
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Новости</a>
+        </li>
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Блоги</a>
+        </li>
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Топы</a>
+        </li>
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Опросы</a>
+        </li>
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Рейтинги</a>
+        </li>
+        <li class="header__sub-nav__item">
+          <a class="header__sub-nav__link" href="#">Реклама</a>
+        </li>
+      </ul>
+      <div class="header__sub-nav__btns-wrapper">
+        <label for="header__sub-btn__earlier-on-air">
+          Ранее в&nbsp;эфире
+          <button id="header__sub-btn__earlier-on-air" class="btn-reset header__sub-btn__earlier-on-air">
+            &laquo;Музыка&raquo;
+          </button>
+        </label>
+        <label for="header__sub-btn__on-air-now">
+          Сейчас в&nbsp;эфире
+          <button id="header__sub-btn__on-air-now" class="btn-reset header__sub-btn__on-air-now">
+            &laquo;Как так?&raquo;
+          </button>
+        </label>
+        <span class="over-twelve">12+</span>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
