@@ -10,9 +10,9 @@
   <link rel="icon" href="img/svg/favicon/favicon.svg" type="imege/svg+xm">
   <title>W-Wave Радио</title>
 </head>
-<body class="container">
+<body>
   <header class="header">
-    <div class="container header__nav-top grid header__grid_center">
+    <div class="container header__nav-top grid header__grid header__grid_center">
       <a class="header__logo-link" href="#">
         <picture>
           <source srcset="img/svg/logo/logo-320.svg" media="(max-width: 320px)">
@@ -45,43 +45,66 @@
         <button class="btn-reset header__login-btn">Вход</button>
       </div>
     </div>
-    <div class="header__nav-bottom grid">
-      <ul class="list-reset header__sub-nav__list">
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Новости</a>
-        </li>
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Блоги</a>
-        </li>
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Топы</a>
-        </li>
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Опросы</a>
-        </li>
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Рейтинги</a>
-        </li>
-        <li class="header__sub-nav__item">
-          <a class="header__sub-nav__link" href="#">Реклама</a>
-        </li>
-      </ul>
-      <label class="header__label header__label__earlier-on-air" for="header__sub-btn__earlier-on-air">
-        Ранее в&nbsp;эфире
-        <button id="header__sub-btn__earlier-on-air" class="btn-reset header-btn header__sub-btn__earlier-on-air">
-          &laquo;Музыка&raquo;
-        </button>
-      </label>
-      <label class="header__label header__label__on-air-now" for="header__sub-btn__on-air-now">
-        Сейчас в&nbsp;эфире
-        <button id="header__sub-btn__on-air-now" class="btn-reset header-btn header__sub-btn__on-air-now">
-          &laquo;Как так?&raquo;
-        </button>
-      </label>
-      <span class="over-twelve"></span>
+    <div class="header__nav-bottom__wrapper">
+      <div class="header__nav-bottom grid container">
+        <ul class="list-reset header__sub-nav__list">
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Новости</a>
+          </li>
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Блоги</a>
+          </li>
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Топы</a>
+          </li>
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Опросы</a>
+          </li>
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Рейтинги</a>
+          </li>
+          <li class="header__sub-nav__item">
+            <a class="header__sub-nav__link" href="#">Реклама</a>
+          </li>
+        </ul>
+        <label class="header__label header__label__earlier-on-air" for="header__sub-btn__earlier-on-air">
+          Ранее в&nbsp;эфире
+          <button id="header__sub-btn__earlier-on-air" class="btn-reset header-btn header__sub-btn__earlier-on-air">
+            &laquo;Музыка&raquo;
+          </button>
+        </label>
+        <label class="header__label header__label__on-air-now" for="header__sub-btn__on-air-now">
+          Сейчас в&nbsp;эфире
+          <button id="header__sub-btn__on-air-now" class="btn-reset header-btn header__sub-btn__on-air-now">
+            &laquo;Как так?&raquo;
+          </button>
+        </label>
+        <span class="over-twelve"></span>
+      </div>
     </div>
   </header>
-  <main class="main"></main>
+  <main class="main">
+    <section class="hero container grid">
+      <div class="hero__wrapper">
+        <h1 class="hero__title">
+          Радио <span>W-Wawe</span>
+        </h1>
+        <p class="hero__text">
+          Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+        </p>
+        <button class="btn-reset hero__btn">
+          Слушать эфир
+        </button>
+      </div>
+      <picture class="hero__picture">
+        <source srcset="img/png/hero/microphone-1024.png" media="(max-width: 1024px)">
+        <img class="hero__img" src="img/png/hero/microphone-desktop.png" alt="Логотип W-Wave Радио">
+      </picture>
+    </section>
+    <section class="podcast">
+
+    </section>
+  </main>
   <footer class="footer"></footer>
 </body>
 </html>
