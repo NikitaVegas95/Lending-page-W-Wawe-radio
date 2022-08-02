@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/choices/choices.min.js">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -102,17 +103,17 @@
       <h2 class="visually-hidden">Подкасты W-Wave радио</h2>
       <div class="podcast__wrapper">
         <h2 class="podcast__title container">Подкасты</h2>
-        <ul class="list-reset podcast__list container grid__podcast">
+        <ul class="list-reset podcast__list container podcast__grid">
           <li class="podcast__item">
             <div class="podcast__item__img__wrapper">
               <picture>
                 <source srcset="img/jpg/podcasts/europ-mobile.jpg" media="(max-widh: 320px)">
                 <img src="img/jpg/podcasts/europ-desktop.jpg" alt="Европа 19 век">
               </picture>
-              <span class="podcast__item__data">14 июня</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">14 июня</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>15:43</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">15:43</time>
               <h3 class="podcast__item-title">Европа. XIX век</h3>
               <p class="podcast__item-text">Дмитрий Гутенберг</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
@@ -150,16 +151,16 @@
                 <source srcset="img/jpg/podcasts/music-mobile.jpg" media="(max-widh: 320px)">
                 <img src="img/jpg/podcasts/music-desktop.jpg" alt="О музыке">
               </picture>
-              <span class="podcast__item__data">11 июня</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">11 июня</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>5:32</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">5:32</time>
               <h3 class="podcast__item-title">О&nbsp;музыке</h3>
               <p class="podcast__item-text">Дмитрий Гутенберг</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="music-desktop-herd">
                 <button id="music-desktop-herd" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -167,7 +168,7 @@
                 </button>
                 207
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="music-desktop-likee">
                 <button id="music-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -175,7 +176,7 @@
                 </button>
                 34
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="music-desktop-repost">
                 <button id="music-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -191,16 +192,16 @@
                 <source srcset="img/jpg/podcasts/people-mobile.jpg" media="(max-widh: 320px)">
                 <img src="img/jpg/podcasts/people-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">8 июня</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">8 июня</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>8:54</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">8:54</time>
               <h3 class="podcast__item-title">Люди сегодня</h3>
               <p class="podcast__item-text">Анна Васильева</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="people-desktop-heard">
                 <button id="people-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -208,7 +209,7 @@
                 </button>
                 104
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="people-desktop-likee">
                 <button id="people-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -216,7 +217,7 @@
                 </button>
                 54
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="people-desktop-repost">
                 <button id="people-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -232,16 +233,16 @@
                 <source srcset="img/jpg/podcasts/africa-mobile.jpg" media="(max-widh: 320px)">
                 <img src="img/jpg/podcasts/africa-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">5 июня</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">5 июня</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>9:04</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">9:04</time>
               <h3 class="podcast__item-title">Хэллоу, Африка!</h3>
               <p class="podcast__item-text">Пётр Дмитриевский</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="africa-desktop-heard">
                 <button id="africa-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -249,7 +250,7 @@
                 </button>
                 87
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="africa-desktop-likee">
                 <button id="africa-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -257,7 +258,7 @@
                 </button>
                 44
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="africa-desktop-repost">
                 <button id="africa-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -270,19 +271,19 @@
           <li class="podcast__item">
             <div class="podcast__item__img__wrapper">
               <picture>
-<!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-widh: 320px)">-->
+<!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-width: 320px)">-->
                 <img src="img/jpg/podcasts/about-everything-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">2 июня</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">2 июня</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>7:03</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">7:03</time>
               <h3 class="podcast__item-title">Обо всём</h3>
               <p class="podcast__item-text">Пётр Дмитриевский</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="about-everything-desktop-heard">
                 <button id="about-everything-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -290,7 +291,7 @@
                 </button>
                 64
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="about-everything-desktop-likee">
                 <button id="about-everything-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -298,7 +299,7 @@
                 </button>
                 30
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="about-everything-desktop-repost">
                 <button id="about-everything-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -311,19 +312,19 @@
           <li class="podcast__item">
             <div class="podcast__item__img__wrapper">
               <picture>
-                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-widh: 320px)">-->
+                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-width: 320px)">-->
                 <img src="img/jpg/podcasts/color-physics-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">28 мая</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">28 мая</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>9:15</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">9:15</time>
               <h3 class="podcast__item-title">Физика цвета</h3>
               <p class="podcast__item-text">Татьяна Флеганова</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="color-physics-desktop-heard">
                 <button id="color-physics-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -331,7 +332,7 @@
                 </button>
                 58
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="color-physics-desktop-likee">
                 <button id="color-physics-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -339,7 +340,7 @@
                 </button>
                 29
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="color-physics-desktop-repost">
                 <button id="color-physics-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -352,19 +353,19 @@
           <li class="podcast__item">
             <div class="podcast__item__img__wrapper">
               <picture>
-                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-widh: 320px)">-->
+                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-width: 320px)">-->
                 <img src="img/jpg/podcasts/sound-source-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">22 мая</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">22 мая</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>16:04</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">16:04</time>
               <h3 class="podcast__item-title">Источник звука</h3>
               <p class="podcast__item-text">Пётр Дмитриевский</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="sound-source-desktop-heard">
                 <button id="sound-source-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -372,7 +373,7 @@
                 </button>
                 55
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="sound-source-desktop-likee">
                 <button id="sound-source-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -380,7 +381,7 @@
                 </button>
                 20
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="sound-source-desktop-repost">
                 <button id="sound-source-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -393,19 +394,19 @@
           <li class="podcast__item">
             <div class="podcast__item__img__wrapper">
               <picture>
-                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-widh: 320px)">-->
+                <!--                <source srcset="img/jpg/podcasts/about-everything-desktop.jpg" media="(max-width: 320px)">-->
                 <img src="img/jpg/podcasts/rules-of-etiquette-desktop.jpg" alt="Люди сегодня">
               </picture>
-              <span class="podcast__item__data">18 мая</span>
+              <span class="podcast__item__data"><time datetime="2001-05-15 19:00">18 мая</time></span>
             </div>
             <div class="podcast__content__wrapper">
-              <time>6:55</time>
+              <time class="podcast__content-time" datetime="2001-05-15 19:00">6:55</time>
               <h3 class="podcast__item-title">Правила этикета</h3>
               <p class="podcast__item-text">Татьяна Флеганова</p>
               <button class="btn-reset podcast__item-europ__btn podcast__btn"></button>
             </div>
             <div class="podcast__item__span__wrapper">
-              <label class="podcast__item__label podcast__item-europ__label-heard" for="podcast__item-europ__heard">
+              <label class="podcast__item__label podcast__item-europ__label-heard" for="rules-of-etiquette-desktop-heard">
                 <button id="rules-of-etiquette-desktop-heard" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__heard">
                   <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 11.331L8.29606 6.5L1.3 1.66897V11.331ZM0.666238 1.23131L0.669532 1.23361L0.666238 1.23131ZM1.41031 12.8347L9.64301 7.14971C10.119 6.82485 10.119 6.17514 9.64301 5.85029L1.41031 0.165315C0.828559 -0.240754 0 0.149072 0 0.815026V12.185C0 12.8509 0.828559 13.2408 1.41031 12.8347Z" fill="#A1A6B4"/>
@@ -413,7 +414,7 @@
                 </button>
                 24
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-likee" for="podcast__item-europ__likee">
+              <label class="podcast__item__label podcast__item-europ__label-likee" for="rules-of-etiquette-desktop-likee">
                 <button id="rules-of-etiquette-desktop-likee" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__likee">
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.425 0C8.294 0 7.2085 0.5297 6.5 1.36676C5.7915 0.5297 4.706 0 3.575 0C1.573 0 0 1.58256 0 3.59673C0 6.06866 2.21 8.08283 5.5575 11.1433L6.5 12L7.4425 11.1368C10.79 8.08283 13 6.06866 13 3.59673C13 1.58256 11.427 0 9.425 0ZM6.565 10.1689L6.5 10.2343L6.435 10.1689C3.341 7.35041 1.3 5.48665 1.3 3.59673C1.3 2.28883 2.275 1.3079 3.575 1.3079C4.576 1.3079 5.551 1.95531 5.8955 2.85123H7.111C7.449 1.95531 8.424 1.3079 9.425 1.3079C10.725 1.3079 11.7 2.28883 11.7 3.59673C11.7 5.48665 9.659 7.35041 6.565 10.1689Z" fill="#A1A6B4"/>
@@ -421,7 +422,7 @@
                 </button>
                 54
               </label>
-              <label class="podcast__item__label podcast__item-europ__label-repost" for="podcast__item-europ__repost">
+              <label class="podcast__item__label podcast__item-europ__label-repost" for="rules-of-etiquette-desktop-repost">
                 <button id="rules-of-etiquette-desktop-repost" class="btn-reset podcast__item__btn podcast__item-europ podcast__item-europ__repost">
                   <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z" fill="#A1A6B4"/>
@@ -432,12 +433,161 @@
             </div>
           </li>
         </ul>
-        <div class="container poscast__btn-wrapper">
+        <div class="container podcast__wrapper-btn">
           <button class="btn-reset podcast__more-btn container">Ещё подкасты</button>
         </div>
       </div>
     </section>
+    <section class="broadcast container">
+      <h2 class="broadcast__title">Передачи</h2>
+      <label class="broadcast__label" for="select">
+        Автор:
+        <select class="broadcast__select" name="select" id="select">
+          <option value="Дмитрий_Гутенберг">Дмитрий Гутенберг</option>
+          <option value="Татьяна_Флеганова">Татьяна Флеганова</option>
+          <option value="Анна_Васильева">Анна Васильева</option>
+          <option value="Пётр_Дмитриевский">Пётр Дмитриевский</option>
+        </select>
+      </label>
+      <picture class="broadcast__picture">
+        <source srcset="img/jpg/broadcast/mic-320.jpg" media="(max-width: 320px)">
+        <source srcset="img/jpg/broadcast/mic-768.jpg" media="(max-width: 768px)">
+        <img src="img/jpg/broadcast/mic-desktop.jpg" alt="Микрофон">
+      </picture>
+      <button class="btn-reset broadcast__btn">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 2L1.5 5.75L9 9.5L16.5 5.75L9 2Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1.5 13.25L9 17L16.5 13.25" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1.5 9.5L9 13.25L16.5 9.5" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Архив
+      </button>
+      <span class="broadcast__archive-text">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</span>
+      <ul class="list-reset broadcast__list">
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/people-desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                О&nbsp;людях и&nbsp;книгах
+              </h3>
+              <p class="broadcast__item__text">
+                Анонсируется отдельно
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/graphomania-desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                Графомания&nbsp;td
+              </h3>
+              <p class="broadcast__item__text">
+                По&nbsp;понедельникам в&nbsp;<time>10:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/no-rome_desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                Не&nbsp;Рим, не&nbsp;Троя
+              </h3>
+              <p class="broadcast__item__text">
+                По&nbsp;вторникам в&nbsp;<time>12:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/scrabble-desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                Эрудит
+              </h3>
+              <p class="broadcast__item__text">
+                По&nbsp;пятницам в&nbsp;<time>17:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/subtleties-desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                Тонкости эпох
+              </h3>
+              <p class="broadcast__item__text">
+                По&nbsp;субботам в&nbsp;<time>10:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="broadcast__item">
+          <article>
+            <picture class="broadcast__item-picture">
+              <source srcset="img/jpg/broadcast/people-320.jpg" media="(max-width: 320px)">
+              <img src="img/jpg/broadcast/living-desktop.jpg" alt="О людях и книгах">
+            </picture>
+            <div class="broadcast__content-wrapper">
+              <h3 class="broadcast__item__title">
+                Живые мысли
+              </h3>
+              <p class="broadcast__item__text">
+                По&nbsp;воскресеньям в&nbsp;<time>15:30</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="guests">
+      <div class="guests__wrapper container">
+        <h2 class="guests__title">Гости</h2>
+      </div>
+    </section>
   </main>
   <footer class="footer"></footer>
+  <script src="js/choices/choices.min.js"></script>
+  <script src="js/choices/choices_plugin_settings.js"></script>
 </body>
 </html>
