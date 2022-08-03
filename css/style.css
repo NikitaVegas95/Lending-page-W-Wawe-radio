@@ -893,3 +893,228 @@ button:active, button:focus {
 }
 
 /* broadcast selector end */
+
+/* guests */
+
+.guests__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
+}
+
+.guests {
+  padding-top: 95px;
+  background-color: var(--deep-darck-color);
+}
+
+.guests__title {
+  margin-bottom: 12px;
+  grid-column: 1 / span 2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--white-color);
+}
+
+.guests__sub-title {
+  margin-bottom: 8px;
+  grid-column: 1 / span 2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--deep-gray-color);
+}
+
+.guests__text {
+  margin-bottom: 49px;
+  grid-column: 1 / span 9;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--deep-gray-color);
+}
+
+.guests__item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+  border-top: 1px solid var(--deep-gray-color);
+  border-bottom: 1px solid var(--deep-gray-color);
+}
+
+.guests__sub-item__btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.guests__article-title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+}
+
+.guests__article-text {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--deep-gray-color);
+}
+
+.guests__article-btn {
+  padding: 5px;
+  width: 160px;
+  min-height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--light-purpul-color);
+  border: 2px solid var(--light-purpul-color);
+  border-radius: 77px;
+}
+
+.guests__list {
+  grid-column: 1 / span 8;
+}
+
+.guests__article {
+  padding-top: 1px;
+  grid-column: 9 / span 4;
+}
+
+.guests__article-img {
+  margin-bottom: 14px;
+}
+
+.guests__article-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.guests__article-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.guests__sub-list {
+  padding-top: 29px;
+  padding-bottom: 28px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 30px;
+  row-gap: 14px;
+}
+
+.guests__sub-item:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.guests__sub-item:nth-child(2) {
+  grid-column: 3 / span 2;
+}
+
+.guests__sub-item:nth-child(3) {
+  grid-column: 5 / span 2;
+}
+
+.guests__sub-item:nth-child(4) {
+  grid-column: 7 / span 2;
+}
+
+.guests__sub-item:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.guests__sub-item:nth-child(6) {
+  grid-column: 3 / span 2;
+}
+
+.guests__sub-item:nth-child(7) {
+  grid-column: 5 / span 2;
+}
+
+.guests__sub-item:nth-child(8) {
+  grid-column: 7 / span 2;
+}
+
+.guests__sub-item:nth-child(9) {
+  grid-column: 1 / span 2;
+}
+
+.guests__sub-item:nth-child(10) {
+  grid-column: 3 / span 2;
+}
+
+.guests__sub-item:nth-child(11) {
+  grid-column: 5 / span 2;
+}
+
+.guests__sub-item:nth-child(12) {
+  grid-column: 7 / span 2;
+}
+
+.guests__sub-item:nth-child(13) {
+  grid-column: 1 / span 2;
+}
+
+.guests__sub-item:nth-child(14) {
+  grid-column: 3 / span 2;
+}
+
+.guests__sub-item:nth-child(15) {
+  grid-column: 5 / span 2;
+}
+
+.ui-accordion-header-icon {
+  display: none;
+}
+
+.guests__item-title-element {
+  position: relative;
+  margin-top: 23px;
+  margin-right: 3px;
+  margin-bottom: 23px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--deep-gray-color);
+  border-radius: 50px;
+}
+
+.guests__item-title-element::before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 2px;
+  height: 13px;
+  background-color: var(--deep-gray-color);
+  transform: rotate(45deg);
+}
+
+.guests__item-title-element::after {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: 22px;
+  width: 2px;
+  height: 13px;
+  background-color: var(--deep-gray-color);
+  transform: rotate(135deg);
+}
