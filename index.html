@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="js/choices/choices.min.js">
-<!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+  <link rel="stylesheet" href="js/choices/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,78 +13,78 @@
   <title>W-Wave Радио</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container header__nav-top grid header__grid header__grid_center">
-      <a class="header__logo-link" href="#">
+<header class="header">
+  <div class="header__nav-top">
+    <div class="container">
+      <a class="header__link" href="#">
         <picture>
           <source srcset="img/svg/logo/logo-320.svg" media="(max-width: 320px)">
           <source srcset="img/svg/logo/logo-768.svg" media="(max-width: 768px)">
           <source srcset="img/svg/logo/logo-1024.svg" media="(max-width: 1024px)">
-          <img class="header__logo" src="img/svg/logo/logo-desktop.svg" alt="Логотип W-Wave Радио">
+          <img class="logo" src="img/svg/logo/logo-desktop.svg" alt="Логотип W-Wave Радио">
         </picture>
       </a>
-      <nav class="header__nav">
-        <ul class="list-reset header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Подкасты</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Передачи</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Гости</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Плейлисты</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">О&nbsp;нас</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__btns-wrapper">
-        <button class="btn-reset header__search-btn"></button>
-        <button class="btn-reset header__login-btn">Вход</button>
-      </div>
     </div>
-    <div class="header__nav-bottom__wrapper">
-      <div class="header__nav-bottom grid container">
-        <ul class="list-reset header__sub-nav__list">
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Новости</a>
-          </li>
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Блоги</a>
-          </li>
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Топы</a>
-          </li>
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Опросы</a>
-          </li>
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Рейтинги</a>
-          </li>
-          <li class="header__sub-nav__item">
-            <a class="header__sub-nav__link" href="#">Реклама</a>
-          </li>
-        </ul>
-        <label class="header__label header__label__earlier-on-air" for="header__sub-btn__earlier-on-air">
-          Ранее в&nbsp;эфире
-          <button id="header__sub-btn__earlier-on-air" class="btn-reset header-btn header__sub-btn__earlier-on-air">
-            &laquo;Музыка&raquo;
-          </button>
+    <nav class="header__nav-top container">
+      <ul class="list-reset header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Подкасты</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Передачи</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Гости</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Плейлисты</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">О&nbsp;нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__top-btns container">
+      <div class="header__search">
+        <label>
+          <input type="search">
         </label>
-        <label class="header__label header__label__on-air-now" for="header__sub-btn__on-air-now">
-          Сейчас в&nbsp;эфире
-          <button id="header__sub-btn__on-air-now" class="btn-reset header-btn header__sub-btn__on-air-now">
-            &laquo;Как так?&raquo;
-          </button>
-        </label>
-        <span class="over-twelve"></span>
+        <button class="btn-reset header__btn-open"></button>
+        <button class="btn-reset header__btn-close"></button>
       </div>
+      <button class="btn-reset header__login"></button>
     </div>
-  </header>
+  </div>
+  <div class="container">
+    <nav class="header__nav-bottom">
+      <ul class="list-reset header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Новости</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Блоги</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Топы</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Опросы</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Рейтинги</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Реклама</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__bottom-btns">
+      <button class="btn-reset header__btn">&laquo;Музыка&raquo;</button>
+      <button class="btn-reset header__btn">&laquo;Как так?&raquo;</button>
+    </div>
+    <span>12+</span>
+  </div>
+</header>
   <main class="main">
     <section class="hero container grid">
       <h2 class="visually-hidden">Крутое радио</h2>
@@ -1142,16 +1141,11 @@
   <footer class="footer">
     <div class="footer__wrapper container">
       <a class="header__logo-link" href="#">
-        <picture>
-          <source srcset="img/svg/logo/logo-320.svg" media="(max-width: 320px)">
-          <source srcset="img/svg/logo/logo-768.svg" media="(max-width: 768px)">
-          <source srcset="img/svg/logo/logo-1024.svg" media="(max-width: 1024px)">
-          <img class="header__logo" src="img/svg/logo/logo-desktop.svg" alt="Логотип W-Wave Радио">
-        </picture>
+        <img class="header__logo" src="img/svg/footer/logo.svg" alt="Логотип W-Wave Радио">
       </a>
       <ul class="list-reset footer__list">
         <li class="footer__item">
-          <a class="footer__link" href="#">
+          <a class="footer__link footer__link_padding" href="#">
             <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" fill="#D2D5DD"/>
             </svg>
