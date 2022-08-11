@@ -24,6 +24,23 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-
-
 });
+
+
+let headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
+    headerDisableNaw = document.querySelector('.btn-svg-disable-naw'),
+    headerBtnNaw = document.querySelector('.header__btn-bottom_naw'),
+    headerEnableArchive = document.querySelector('.btn-svg-enable-archive'),
+    headerDisableArchive = document.querySelector('.btn-svg-disable-archive'),
+    headerBtnArchive =document.querySelector('.header__btn-bottom_archive');
+
+
+    headerBtnNaw.addEventListener('click', function () {
+      headerEnableNaw.classList.toggle('btn-svg-disable-naw');
+      headerDisableNaw.classList.toggle('btn-svg-enable-naw');
+    });
+
+    headerBtnArchive.addEventListener('click', function () {
+      headerEnableArchive.classList.toggle('btn-svg-disable-archive');
+      headerDisableArchive.classList.toggle('btn-svg-enable-archive');
+    });

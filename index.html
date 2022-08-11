@@ -13,9 +13,8 @@
   <title>W-Wave Радио</title>
 </head>
 <body>
-<header class="header">
-  <div class="header__nav-top">
-    <div class="container">
+  <header class="header">
+    <div class="header__top container">
       <a class="header__link" href="#">
         <picture>
           <source srcset="img/svg/logo/logo-320.svg" media="(max-width: 320px)">
@@ -24,67 +23,85 @@
           <img class="logo" src="img/svg/logo/logo-desktop.svg" alt="Логотип W-Wave Радио">
         </picture>
       </a>
-    </div>
-    <nav class="header__nav-top container">
-      <ul class="list-reset header__list">
-        <li class="header__item">
-          <a class="header__link" href="#">Подкасты</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Передачи</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Гости</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Плейлисты</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">О&nbsp;нас</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__top-btns container">
-      <div class="header__search">
-        <label>
-          <input type="search">
-        </label>
+      <nav class="header__nav-top">
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a class="header__link header__link_link-size" href="#">Подкасты</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_link-size" href="#">Передачи</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_link-size" href="#">Гости</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_link-size" href="#">Плейлисты</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_link-size" href="#">О&nbsp;нас</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header__search">
+        <input placeholder="Поиск по сайту" class="header__input" type="search">
         <button class="btn-reset header__btn-open"></button>
-        <button class="btn-reset header__btn-close"></button>
+      </form>
+      <button class="btn-reset header__btn header__btn_focus header__btn_color">Вход</button>
+    </div>
+    <span class="line"></span>
+    <div class="header__bottom container">
+      <nav class="header__nav-bottom">
+        <ul class="list-reset header__list-bottom">
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Новости</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Блоги</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Топы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Опросы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Рейтинги</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link_bottom-sizes" href="#">Реклама</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__bottom-btns">
+        <button class="btn-reset header__btn-bottom header__btn-bottom_naw">
+          <svg class="btn-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+          </svg>
+          <svg class="btn-svg-enable-naw" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" fill="#A1A6B4"/>
+            <rect x="7" y="6" width="2" height="8" rx="1" fill="white"/>
+            <rect x="11" y="6" width="2" height="8" rx="1" fill="white"/>
+          </svg>
+          <span class="btn-span">Ранее в эфире</span>
+          <span class="btn-text">&laquo;Музыка&raquo;</span>
+        </button>
+        <button class="btn-reset header__btn-bottom header__btn-bottom_archive">
+          <svg class="btn-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+          </svg>
+          <svg class="btn-svg-enable-archive" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" fill="#A1A6B4"/>
+            <rect x="7" y="6" width="2" height="8" rx="1" fill="white"/>
+            <rect x="11" y="6" width="2" height="8" rx="1" fill="white"/>
+          </svg>
+          <span class="btn-span">Сейчас в эфире</span>
+          <span class="btn-text btn-text_padding-right">&laquo;Как так?&raquo;</span>
+        </button>
       </div>
-      <button class="btn-reset header__login"></button>
+      <span class="twelve-plus"></span>
     </div>
-  </div>
-  <div class="container">
-    <nav class="header__nav-bottom">
-      <ul class="list-reset header__list">
-        <li class="header__item">
-          <a class="header__link" href="#">Новости</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Блоги</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Топы</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Опросы</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Рейтинги</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Реклама</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header__bottom-btns">
-      <button class="btn-reset header__btn">&laquo;Музыка&raquo;</button>
-      <button class="btn-reset header__btn">&laquo;Как так?&raquo;</button>
-    </div>
-    <span>12+</span>
-  </div>
-</header>
+    <span class="line"></span>
+  </header>
   <main class="main">
     <section class="hero container grid">
       <h2 class="visually-hidden">Крутое радио</h2>
