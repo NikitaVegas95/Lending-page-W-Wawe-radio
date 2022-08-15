@@ -32,7 +32,11 @@ let headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
     headerBtnNaw = document.querySelector('.header__btn-bottom_naw'),
     headerEnableArchive = document.querySelector('.btn-svg-enable-archive'),
     headerDisableArchive = document.querySelector('.btn-svg-disable-archive'),
-    headerBtnArchive =document.querySelector('.header__btn-bottom_archive');
+    headerBtnArchive = document.querySelector('.header__btn-bottom_archive'),
+    headerNavTop = document.querySelector('.header__nav-top'),
+    burger = document.querySelector('.burger'),
+    header = document.querySelector('.header'),
+    burgerLineMenuCloze = document.querySelector('.burger-line-menu');
 
 
     headerBtnNaw.addEventListener('click', function () {
@@ -43,4 +47,10 @@ let headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
     headerBtnArchive.addEventListener('click', function () {
       headerEnableArchive.classList.toggle('btn-svg-disable-archive');
       headerDisableArchive.classList.toggle('btn-svg-enable-archive');
+    });
+
+    burger.addEventListener('click', function () {
+      header.classList.toggle('header-active');
+      headerNavTop.classList.toggle('open');
+      burgerLineMenuCloze.classList.toggle('burger-line_close-menu')
     });
