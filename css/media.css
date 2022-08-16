@@ -36,6 +36,7 @@
     margin-right: 0;
     padding-top: 8px;
     padding-bottom: 8px;
+    max-width: 115px;
   }
   .header {
     position: relative;
@@ -261,6 +262,7 @@
   }
   .header__link_margin {
     padding-top: 7px;
+    max-width: 115px;
   }
   .header__top {
      padding-bottom: 12px;
@@ -313,14 +315,14 @@
     visibility: visible;
     opacity: 1;
     width: 100%;
-    max-width: 215px;
+    max-width: 250px;
     min-height: 108px;
   }
   .header__list-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 78px;
+    grid-column-gap: 38px;
   }
   .header__item-bottom:not(:last-child) {
     margin-right: 0;
@@ -421,7 +423,6 @@
     color: var(--medium-purpul-color);
     opacity: 1;
     visibility: visible;
-    z-index: 1;
   }
   .btn-320__span {
     position: absolute;
