@@ -38,7 +38,8 @@ const headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
       header = document.querySelector('.header'),
       burgerLineMenuClose = document.querySelector('.burger-line-menu'),
       btnMobile = document.querySelector('.btn-320'),
-      headerBottomBtns = document.querySelector('.header__bottom-btns');
+      headerBottomBtns = document.querySelector('.header__bottom-btns'),
+      headerNavBottom = document.querySelector('.header__bottom');
 
 
       headerBtnNaw.addEventListener('click', function () {
@@ -54,11 +55,12 @@ const headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
       burger.addEventListener('click', function () {
         header.classList.toggle('header-active');
         headerNavTop.classList.toggle('open');
-        burgerLineMenuClose.classList.toggle('burger-line_close-menu')
+        burgerLineMenuClose.classList.toggle('burger-line_close-menu');
       });
 
       btnMobile.addEventListener('click', function () {
-        headerBottomBtns.classList.toggle('header__bottom-btns_open')
+        headerBottomBtns.classList.toggle('header__bottom-btns_open');
+        headerNavBottom.classList.toggle('header__bottom_after');
       })
 
 const mediaQuery = window.matchMedia('(max-width: 560px)')

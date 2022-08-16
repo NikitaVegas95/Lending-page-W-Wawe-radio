@@ -550,7 +550,8 @@ body {
 
 .hero__btn {
   padding: 20px;
-  width: 245px;
+  max-width: 245px;
+  min-width: 245px;
   min-height: 70px;
   font-style: normal;
   font-weight: 500;
