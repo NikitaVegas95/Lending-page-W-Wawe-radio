@@ -458,49 +458,55 @@ body {
 }
 
 .header__btn-bottom_padding {
-padding: 3px 42px 0 41px;
-border-right: 1px solid var(--light-gray-color);
+  padding: 3px 42px 0 41px;
+  border-right: 1px solid var(--light-gray-color);
 }
 
 .btn-span {
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-color: var(--deep-gray-color);
-word-break: break-word;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--deep-gray-color);
+  word-break: break-word;
 }
 
 .twelve-plus {
-position: relative;
-left: 19px;
-background-color: var(--light-gray-color);
-width: 46px;
-height: 58px;
+  position: relative;
+  left: 19px;
+  background-color: var(--light-gray-color);
+  width: 46px;
+  height: 58px;
 }
 
 .twelve-plus::before {
-content: " ";
-position: absolute;
-top: 14px;
-left: 8px;
-width: 30px;
-height: 30px;
-border-radius: 50px;
-background-color: var(--white-color);
+  content: " ";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: var(--white-color);
 }
 
 .twelve-plus::after {
-content: "12+";
-position: absolute;
-top: 22px;
-left: 14px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-color: var(--deep-gray-color);
+  content: "12+";
+  position: absolute;
+  top: 22px;
+  left: 14px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--deep-gray-color);
+}
+
+.btn-320 {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Hero */
