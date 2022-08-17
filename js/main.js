@@ -75,3 +75,28 @@ const mediaQuery = window.matchMedia('(max-width: 560px)')
           headerBottom.classList.toggle('header__bottom_bg');
         });
       }
+
+
+const buttons = document.querySelectorAll('.podcast__btn')
+
+      for (let button of buttons) {
+        button.addEventListener("click", e => {
+          let activeBtn = document.querySelector('button.pause');
+          if (activeBtn && activeBtn !== e.target) {
+            activeBtn.classList.remove('pause');
+            button.classList.toggle('pause');
+          }
+          button.classList.toggle('pause');
+        });
+      }
+
+document.querySelector('.podcast__more-btn').addEventListener('click', function () {
+  let elements = document.getElementsByClassName('podcast__item');
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].classList.toggle("podcasts__item_visible");
+  }
+});
+
+document.querySelector('.podcast__more-btn').addEventListener('click', function () {
+  document.querySelector('.podcast__more-btn').classList.toggle('podcasts-btns__btn--passive')
+});
