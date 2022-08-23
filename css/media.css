@@ -88,6 +88,22 @@
     grid-column: 3 / span 4;
     grid-row: 1 / span 6;
   }
+  .guests__text {
+    grid-column: 1 / span 4;
+  }
+  .guests__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .guests__list {
+    padding-bottom: 95px;
+    grid-column: 1 / span 4;
+  }
+  .guests__article {
+    grid-column: 5 / span 2;
+  }
+  .guests__sub-list {
+    grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+  }
 }
 
 @media (max-width: 870px) {
@@ -317,6 +333,31 @@
     top: 30px;
     left: 98px;
     grid-row: 5;
+  }
+  .guests__text {
+    grid-column: 1 / span 4;
+  }
+  .guests__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .guests__list {
+    padding-bottom: 50px;
+    grid-column: 1 / span 4;
+  }
+  .guests__article {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+  }
+  .guests__sub-list {
+    grid-template-columns: repeat(auto-fit, minmax(159px, 1fr));
+    row-gap: 28px;
+  }
+  .guests__article-text {
+    max-width: 393px;
+    min-height: 140px;
+  }
+  .guests__article-btn {
+    margin-bottom: 93px;
   }
 }
 
@@ -836,5 +877,59 @@
     top: 38px;
   }
 
-
+  .guests__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .guests__title {
+    grid-column: 1;
+    font-size: 24px;
+  }
+  .guests__sub-title {
+    margin-bottom: 0;
+    grid-column: 1;
+    font-size: 14px;
+  }
+  .guests__text {
+    margin-bottom: 27px;
+    grid-column: 1 / span 2;
+    font-size: 14px;
+  }
+  .guests__list {
+    grid-column: 1 / span 2;
+  }
+  .guests__article {
+    grid-column: 1 / span 2;
+  }
+  .guests__item-text {
+    font-size: 16px;
+  }
+  .guests__item:first-child {
+    display: none;
+  }
+  .guests__item-title {
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
+  .guests__sub-item__btn {
+    max-width: 30px;
+    font-size: 14px;
+  }
+  .guests__sub-list {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    row-gap: 26px;
+  }
+  .guests {
+    padding-top: 55px;
+  }
+  .guests__list {
+    padding-bottom: 30px;
+  }
+  .guests__article-list {
+    margin-bottom: 24px;
+  }
+  .guests__article-btn {
+    margin-bottom: 50px;
+  }
 }
