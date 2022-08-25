@@ -159,7 +159,55 @@
   .playlists__text-bottom {
     grid-column: 1 / span 6;
   }
+  .market {
+    padding-bottom: 94px;
+  }
+  .market__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .market__picture {
+    padding-top: 117px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  .market__title {
+    padding-bottom: 31px;
+    grid-column: 4 / span 3;
+  }
+  .market__text {
+    grid-column: 4 / span 3;
+  }
+  .market__price {
+    grid-column: 4;
+  }
+  .market__btn {
+    grid-column: 4 / span 3;
+  }
+  .about-us__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .about-us__sub-text {
+    grid-column: 1 / span 4;
+  }
+  .about-us__text {
+    grid-column: 1 / span 4;
+  }
+  .swiper {
+    margin-bottom: 7px;
+    grid-column: 1 / span 6;
+  }
+  .about-us__form {
+    grid-column: 1 / span 6;
+  }
+  .about-us__wrapper {
+    background-image: url(../img/png/about-us/background-image-1024.png);
+    background-position: right 48px;
+  }
+  .about-us__input-text {
+    margin-bottom: 24px;
+  }
 }
+
 
 @media (max-width: 870px) {
   .container {
@@ -415,8 +463,55 @@
     margin-bottom: 93px;
   }
   .playlists__checkbox-wrapper {
-    margin-bottom: 18px;
+    margin-bottom: 36px;
     row-gap: 30px;
+  }
+  .market {
+    padding-top: 54px;
+  }
+  .market__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .market__picture {
+    grid-column: 1 / span 4;
+  }
+  .market__title {
+    position: relative;
+    padding-top: 51px;
+    padding-bottom: 30px;
+    max-width: 370px;
+    min-height: 96px;
+    grid-column: 1 / span 4;
+    background: none;
+  }
+  .market__title::before {
+    content: url("../img/png/market/line-768.png");
+    position: absolute;
+    top: 140px;
+  }
+  .market__text {
+    grid-column: 1 / span 4;
+  }
+  .market__price {
+    grid-column: 1;
+  }
+  .market__btn {
+    grid-column: 1 / span 3;
+  }
+  .market__picture {
+    padding-top: 0;
+  }
+  .about-us__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .swiper {
+    grid-column: 1 / span 4;
+  }
+  .about-us__text {
+    margin-bottom: 171px;
+  }
+  .about-us__form {
+    grid-column: 1 / span 4;
   }
 }
 
@@ -1074,5 +1169,44 @@
   }
   .playlists__copyright {
     font-size: 12px;
+  }
+  .playlists__checkbox-wrapper {
+    margin-bottom: 18px;
+  }
+  .market {
+    padding-bottom: 53px;
+  }
+  .market__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .market__picture {
+    grid-column: 1 / span 2;
+  }
+  .market__title {
+    padding-top: 40px;
+    padding-bottom: 22px;
+    grid-column: 1 / span 2;
+    font-size: 24px;
+  }
+  .market__text {
+    margin-bottom: 8px;
+    grid-column: 1 / span 2;
+    line-height: 160%;
+    font-size: 14px;
+  }
+  .market__price {
+    margin-bottom: 15px;
+    grid-column: 1;
+    font-size: 24px;
+  }
+  .market__btn {
+    grid-column: 1 / span 2;
+    font-size: 16px;
+    min-height: 50px;
+    padding: 5px 5px 5px 42px;
+  }
+  .market__title::before {
+    content: url("../img/png/market/Vector-320.png");
+    top: 140px;
   }
 }

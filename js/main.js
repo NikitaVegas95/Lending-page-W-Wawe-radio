@@ -10,6 +10,8 @@ $(function (){
 })
 
 //--------------------------swiper------------------------------------------
+const mediaQuery1200 = window.matchMedia('(max-width: 1200px)');
+const mediaQuery560 = window.matchMedia('(max-width: 560px)');
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -29,8 +31,29 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-
 });
+
+if (mediaQuery1200.matches) {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+}
 
 //--------------------------tabs------------------------------------------
 
@@ -93,9 +116,9 @@ const headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
         headerNavBottom.classList.toggle('header__bottom_after');
       })
 
-const mediaQuery = window.matchMedia('(max-width: 560px)')
 
-      if (mediaQuery.matches) {
+
+      if (mediaQuery560.matches) {
         const burger = document.querySelector('.burger'),
               headerNavBottom = document.querySelector('.header__nav-bottom')
               headerBottom = document.querySelector('.header__bottom');
