@@ -549,7 +549,7 @@ body {
 }
 
 .hero__btn {
-  padding: 20px;
+  padding: 26px 54px 24px 54px;
   max-width: 245px;
   min-width: 245px;
   min-height: 70px;
@@ -1374,6 +1374,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: var(--deep-gray-color);
+  word-break: break-word;
+}
+
+.playlists__checkbox-mobile {
+  grid-column: 1 / span 4;
 }
 
 .playlists__checkbox-wrapper {
@@ -1381,7 +1386,6 @@ body {
   margin-bottom: 38px;
   display: grid;
   row-gap: 16px;
-  grid-column: 1 / span 4;
   border-bottom: 1px solid var(--deep-gray-color);
 }
 
@@ -1454,10 +1458,6 @@ body {
 }
 
 .checkbox {
-  display: none;
-}
-
-.playlists__checkbox-wrapper-mobile_display-none {
   display: none;
 }
 
