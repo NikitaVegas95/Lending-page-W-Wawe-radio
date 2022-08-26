@@ -18,10 +18,6 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -31,6 +27,9 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  autoplay: {
+    delay: 2000,
+  },
 });
 
 if (mediaQuery1200.matches) {
@@ -39,10 +38,6 @@ if (mediaQuery1200.matches) {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -51,6 +46,9 @@ if (mediaQuery1200.matches) {
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
+    },
+    autoplay: {
+      delay: 2000,
     },
   });
 }

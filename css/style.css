@@ -774,7 +774,7 @@ body {
 }
 
 .podcast__item-europ__label-heard{
- padding-left: 16px;
+  padding-left: 16px;
 }
 
 .podcast__item-europ__label-likee {
@@ -1041,7 +1041,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-   color: var(--deep-gray-color);
+  color: var(--deep-gray-color);
 }
 
 .broadcast__item-link {
