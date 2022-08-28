@@ -1901,6 +1901,15 @@ body {
 .footer {
   padding-top: 94px;
   background-color: var(--light-darck-color);
+  min-height: 323px;
+  background-image: url("../img/png/footer/Vector.png");
+  background-repeat: no-repeat;
+  background-position: -8px 275px;
+}
+
+.header__logo-link {
+  grid-column: 1 / span 2;
+  margin-bottom: 2px;
 }
 
 .footer__wrapper {
@@ -1944,3 +1953,38 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 24px;
 }
+
+.footer__nav-bottom {
+  grid-row: 1 / span 2;
+  grid-column: 8 / span 5;
+}
+
+.footer__list-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 109px;
+  row-gap: 20px;
+}
+
+.footer__bottom-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.bottom-span {
+  grid-row: 3;
+  grid-column: 6 / span 2;
+  margin-left: 16px;
+  padding-top: 115px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 103.34%;
+  color: var(--deep-gray-color);
+  max-width: 128px;
+  min-height: 17px;
+}
+
