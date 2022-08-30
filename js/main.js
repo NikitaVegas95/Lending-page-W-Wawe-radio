@@ -10,20 +10,24 @@ $(function (){
 })
 
 //--------------------------swiper------------------------------------------
-const mediaQuery1200 = window.matchMedia('(max-width: 1200px)');
 const mediaQuery560 = window.matchMedia('(max-width: 560px)');
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  slidesPerView: 4,
-  spaceBetween: 30,
   loop: true,
-  // Navigation arrows
+  breakpoints: {
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
@@ -31,27 +35,6 @@ const swiper = new Swiper('.swiper', {
     delay: 2000,
   },
 });
-
-if (mediaQuery1200.matches) {
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    slidesPerView: 2,
-    spaceBetween: 30,
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    autoplay: {
-      delay: 2000,
-    },
-  });
-}
 
 //--------------------------tabs------------------------------------------
 

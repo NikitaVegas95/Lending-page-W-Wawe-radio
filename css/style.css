@@ -1671,6 +1671,7 @@ body {
 }
 
 .swiper-button-next, .swiper-button-prev {
+  top: 130px;
   width: 42px;
   height: 42px;
   border: 2px solid var(--deep-gray-color);

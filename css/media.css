@@ -505,13 +505,33 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .swiper {
+    margin-bottom: 0;
     grid-column: 1 / span 4;
+  }
+  .about-us {
+    padding-top: 96px;
+    padding-bottom: 95px;
   }
   .about-us__text {
     margin-bottom: 171px;
   }
   .about-us__form {
     grid-column: 1 / span 4;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+  }
+  .about-us__input-text__label {
+    grid-column: 1 / span 4;
+  }
+  .about-us__input-name__label {
+    grid-column: 1 / span 4;
+  }
+  .about-us__input-email__label {
+    grid-column: 1 / span 4;
+  }
+  .about-us__wrapper {
+    background-image: url(../img/png/about-us/background-image-768.png);
+    background-position: -114px 380px;
   }
 }
 
@@ -1207,6 +1227,73 @@
   }
   .market__title::before {
     content: url("../img/png/market/Vector-320.png");
-    top: 140px;
+    top: 98px;
+  }
+  .about-us {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .about-us__title {
+    margin-bottom: 11px;
+    font-size: 24px;
+  }
+  .about-us__sub-text {
+    margin-bottom: 5px;
+    grid-column: 1 / span 2;
+    font-size: 14px;
+  }
+  .about-us__text {
+    grid-column: 1 / span 2;
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .about-us__wrapper {
+    background-image: none;
+  }
+  .about-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us__item-title {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about-us__item-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .about-us__label {
+    font-size: 9px;
+    line-height: 9px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+  .about-us__img {
+    margin-bottom: 13px;
+  }
+  .about-us__input-text {
+    border-radius: 20px;
+  }
+  .swiper {
+    grid-column: 1 / span 2;
+  }
+  .about-us__form {
+    grid-column: 1 / span 2;
+  }
+  .about-us__input-name {
+    height: 50px;
+  }
+  .about-us__input-email {
+    height: 50px;
+  }
+  .about-us__btn {
+    margin-bottom: 23px;
+    grid-column: 1 / span 2;
+    padding: 16px;
+    width: 172px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
