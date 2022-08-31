@@ -206,6 +206,25 @@
   .about-us__input-text {
     margin-bottom: 24px;
   }
+  .footer__wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer__nav-bottom {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 4;
+  }
+  .footer__list-bottom {
+    grid-template-columns: repeat(3, minmax(41px, 1fr));
+    padding-left: 94px;
+  }
+  .bottom-span {
+    padding-left: 47px;
+    grid-column: 3 / span 2;
+    max-width: 175px;
+  }
+  .footer {
+    background-position: -18px 276px;
+  }
 }
 
 
@@ -532,6 +551,41 @@
   .about-us__wrapper {
     background-image: url(../img/png/about-us/background-image-768.png);
     background-position: -114px 380px;
+  }
+  .footer {
+    min-height: 483px;
+    background-position: -14px 436px;
+  }
+  .footer__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header__logo-link {
+    margin-bottom: 32px;
+    padding-left: 47px;
+    grid-row: 1;
+    grid-column: 2 / span 2;
+  }
+  .footer__list {
+    margin-bottom: 77px;
+    justify-content: space-evenly;
+    grid-row: 2;
+    grid-column: 2 / span 2;
+  }
+  .footer__nav-bottom {
+    grid-row: 3 / span 2;
+    grid-column: 1 / span 4;
+  }
+  .bottom-span {
+    padding-top: 209px;
+    padding-left: 47px;
+    grid-column: 2 / span 2;
+    max-width: 175px;
+  }
+  .footer__list-bottom {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+    column-gap: 139px;
+    row-gap: 30px;
   }
 }
 
@@ -1295,5 +1349,47 @@
     height: 50px;
     font-size: 16px;
     line-height: 16px;
+  }
+  .footer {
+    padding-top: 53px;
+    background-position: -12px 395px;
+  }
+  .footer__wrapper {
+    min-height: 451px;
+    background-position: -5px 408px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__logo-link {
+    margin-bottom: 0;
+    padding-left: 48px;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+  .footer__list {
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+  }
+  .footer__nav-bottom {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+  .bottom-span {
+    font-size: 12px;
+    padding-top: 255px;
+    padding-left: 59px;
+    grid-column: 1 / span 2;
+    max-width: 175px;
+  }
+  .footer__list-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    column-gap: 123px;
+    row-gap: 24px;
+  }
+  .footer__bottom-item {
+    font-size: 12px;
+    line-height: 12px;
   }
 }

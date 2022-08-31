@@ -32,7 +32,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
   autoplay: {
-    delay: 2000,
+    delay: 5000,
   },
 });
 
