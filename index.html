@@ -30,19 +30,19 @@
         <nav class="header__nav-top header__nav-panel">
           <ul class="list-reset header__list">
             <li class="header__item">
-              <a class="header__link header__link_link-size" href="#">Подкасты</a>
+              <a class="header__link header__link_link-size" href="#podcast-id">Подкасты</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link_link-size" href="#">Передачи</a>
+              <a class="header__link header__link_link-size" href="#broadcast-id">Передачи</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link_link-size" href="#">Гости</a>
+              <a class="header__link header__link_link-size" href="#guest-id">Гости</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link_link-size" href="#">Плейлисты</a>
+              <a class="header__link header__link_link-size" href="#playlist-id">Плейлисты</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link_link-size" href="#">О&nbsp;нас</a>
+              <a class="header__link header__link_link-size" href="#about-us-id">О&nbsp;нас</a>
             </li>
           </ul>
         </nav>
@@ -129,7 +129,7 @@
         <img class="hero__img" src="img/png/hero/microphone-desktop.png" alt="Логотип W-Wave Радио">
       </picture>
     </section>
-    <section class="podcast">
+    <section class="podcast" id="podcast-id">
       <h2 class="visually-hidden">Подкасты W-Wave радио</h2>
       <div class="podcast__wrapper">
         <h2 class="podcast__title container">Подкасты</h2>
@@ -752,7 +752,7 @@
         </div>
       </div>
     </section>
-    <section class="broadcast container">
+    <section class="broadcast container" id="broadcast-id">
       <h2 class="broadcast__title">Передачи</h2>
       <label class="broadcast__label" for="select">
         Автор:
@@ -924,7 +924,7 @@
         </li>
       </ul>
     </section>
-    <section class="guests">
+    <section class="guests" id="guest-id">
       <div class="guests__wrapper container guests__grid">
         <h2 class="guests__title">Гости</h2>
         <h3 class="guests__sub-title">У&nbsp;нас бывают:</h3>
@@ -1118,7 +1118,7 @@
         </article>
       </div>
     </section>
-    <section class="playlists container">
+    <section class="playlists container" id="playlist-id">
       <h2 class="playlists__title">Плейлисты</h2>
       <p class="playlists__text">Жанр</p>
         <div class="playlists__checkbox-mobile">
@@ -1389,12 +1389,12 @@
         <p class="market__text">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)</p>
         <p class="market__text market__text_margin">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
         <span class="market__price">2&nbsp;800&nbsp;₽</span>
-        <button class="btn-reset market__btn">
+        <a target="_blank" href="https://market.yandex.ru/product--retro-radiopriemnik-camry-cr1188-bt-usb-stereo/1479554982?cpc=38kOf9hHgSCFnIzTHe5d_UTIZKizL0F61cPDkrn7cKqzsilhDNTit-xI19FojWvU_I9FWs3qowIb9BCixlij_udDy288UBh-uMbn0k-qzmWqIIt1qwBTubVPE35doYl72mMsRJr1TUxJgF0KKIOOSR9URN53jV1jZ8QtXp2EjLoESAnGg_zzS9bfdN73JIeQ&sku=101500644701&from=premiumOffers&from-show-uid=16619343838990688103900001&do-waremd5=uDRySbgahb9PBtPmE6Nlhg&sponsored=1" class="btn-reset market__btn">
           Купить на&nbsp;Яндекс.Маркет
-        </button>
+        </a>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us-id">
       <div class="about-us__wrapper container about-us__grid">
         <h2 class="about-us__title">О&nbsp;нас</h2>
         <p class="about-us__sub-text">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
@@ -1517,22 +1517,22 @@
       <nav class="footer__nav-bottom container">
         <ul class="footer__list-bottom list-reset">
           <li class="footer__bottom-item">
-            <a href="#">Подкасты</a>
+            <a href="#podcast-id">Подкасты</a>
           </li>
           <li class="footer__bottom-item">
-            <a href="#">Передачи</a>
+            <a href="#broadcast-id">Передачи</a>
           </li>
           <li class="footer__bottom-item">
-            <a href="#">Гости</a>
+            <a href="#guest-id">Гости</a>
           </li>
           <li class="footer__bottom-item">
-            <a href="#">Плейлисты</a>
+            <a href="#playlist-id">Плейлисты</a>
           </li>
           <li class="footer__bottom-item">
             <a href="#">Сетка</a>
           </li>
           <li class="footer__bottom-item">
-            <a href="#">О нас</a>
+            <a href="#about-us-id">О нас</a>
           </li>
           <li class="footer__bottom-item">
             <a href="#">Новости</a>
@@ -1547,8 +1547,57 @@
       </nav>
       <span class="bottom-span">W-WAVE ® 2021</span>
     </div>
-
   </footer>
+
+  <div class="modal-wrapper">
+    <div class="modal-overlay">
+      <form class="modal">
+        <button class="btn-reset modal__btn-top">
+          <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21" cy="21" r="19.5" stroke="#A1A6B4" stroke-width="3"/>
+            <path d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12" stroke="#A1A6B4" stroke-width="3"/>
+          </svg>
+        </button>
+        <span class="modal__title">Вход</span>
+        <p class="modal__text modal__text_margin">Если у&nbsp;вас ещё нет аккаунта,&ensp;<a class="modal__text modal__text_color" href="#">зарегистрируйтесь</a></p>
+        <label class="modal__input-wrapper">
+          <input class="modal__input" type="text" placeholder="Логин">
+        </label>
+        <label class="modal__input-wrapper">
+          <input class="modal__input" type="password" placeholder="Пароль">
+        </label>
+        <button class="btn-reset modal__btn">Войти</button>
+        <p class="modal__text modal__text_margin">Войти с&nbsp;помощью:</p>
+        <ul class="list-reset modal__list">
+          <li class="modal__item">
+            <a class="modal__link" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.3 33.6667V20.7667H27.6204L28.2667 15.7519H23.3V12.5519C23.3 11.1 23.7037 10.1093 25.7852 10.1093H28.4408V5.62408C27.1552 5.48769 25.8632 5.42154 24.5704 5.42594C20.7426 5.42594 18.1223 7.76297 18.1223 12.0556V15.7519H13.7926V20.7667H18.1223V33.6667H2.18523C1.69408 33.6667 1.22306 33.4716 0.875769 33.1243C0.528479 32.777 0.333374 32.306 0.333374 31.8148V2.1852C0.333374 1.69405 0.528479 1.22303 0.875769 0.875738C1.22306 0.528449 1.69408 0.333344 2.18523 0.333344H31.8149C32.306 0.333344 32.777 0.528449 33.1243 0.875738C33.4716 1.22303 33.6667 1.69405 33.6667 2.1852V31.8148C33.6667 32.306 33.4716 32.777 33.1243 33.1243C32.777 33.4716 32.306 33.6667 31.8149 33.6667H23.3Z" fill="#A1A6B4"/>
+              </svg>
+            </a>
+          </li>
+          <li class="modal__item">
+            <a class="modal__link" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="33.33" height="33.33" rx="2" fill="#A1A6B4"/>
+                <path d="M17.7487 23.332H16.3854C16.3854 23.332 13.3772 23.5131 10.7277 20.7545C7.83835 17.7461 5.28686 11.7765 5.28686 11.7765C5.28686 11.7765 5.13973 11.3853 5.29964 11.1959C5.47938 10.9831 5.96857 10.9695 5.96857 10.9695L9.22782 10.9482C9.22782 10.9482 9.53491 10.9994 9.75468 11.1608C9.93588 11.294 10.0373 11.543 10.0373 11.543C10.0373 11.543 10.5641 12.8752 11.2617 14.0804C12.6233 16.4331 13.2575 16.9477 13.7198 16.6957C14.3934 16.3283 14.1914 13.3698 14.1914 13.3698C14.1914 13.3698 14.2037 12.296 13.8522 11.8177C13.58 11.4475 13.0667 11.3391 12.84 11.3089C12.6566 11.2844 12.9576 10.8587 13.3478 10.6676C13.9343 10.3803 14.9699 10.3641 16.1938 10.3765C17.1473 10.3863 17.4219 10.4458 17.7946 10.5357C18.6597 10.7446 18.6327 11.4138 18.5745 12.8578L18.5745 12.8579C18.5571 13.2893 18.537 13.7899 18.537 14.3681C18.537 14.4983 18.5332 14.6371 18.5293 14.7798V14.7799C18.509 15.5193 18.4858 16.3656 18.9726 16.6802C19.2223 16.8415 19.8331 16.7042 21.3603 14.111C22.084 12.8819 22.627 11.4368 22.627 11.4368C22.627 11.4368 22.7453 11.1791 22.9297 11.0688C23.1181 10.9561 23.3726 10.9907 23.3726 10.9907L26.8023 10.9695C26.8023 10.9695 27.8329 10.8466 27.9997 11.3118C28.1747 11.8001 27.6146 12.9402 26.2135 14.8077C24.8827 16.5813 24.236 17.2332 24.2968 17.8106C24.3401 18.2221 24.7429 18.5959 25.5137 19.311L25.5668 19.3603C27.2548 20.9272 27.7051 21.7501 27.8121 21.9456C27.8207 21.9615 27.8271 21.9732 27.8318 21.9809C28.5873 23.2337 26.9939 23.332 26.9939 23.332L23.9477 23.3746C23.9477 23.3746 23.2931 23.5041 22.4317 22.9125C21.9813 22.6033 21.5409 22.0985 21.1214 21.6174L21.1214 21.6174C20.4798 20.8818 19.8868 20.2019 19.3806 20.3624C18.5317 20.6319 18.5583 22.4613 18.5583 22.4613C18.5583 22.4613 18.5645 22.852 18.371 23.0601C18.1605 23.2866 17.7487 23.332 17.7487 23.332Z" fill="#121723"/>
+              </svg>
+            </a>
+          </li>
+          <li class="modal__item">
+            <a class="modal__link" href="#">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="33.33" height="33.33" rx="2" fill="#A1A6B4"/>
+                <path d="M20.9403 11.9923C20.1517 11.2694 18.7687 10.4043 16.7183 10.4043C13.8309 10.4043 11.3802 12.2649 10.4945 14.8364C10.2761 15.5001 10.1427 16.2111 10.1427 16.9459C10.1427 17.6806 10.2761 18.3917 10.5066 19.0553C11.3802 21.6269 13.8309 23.4874 16.7183 23.4874C18.344 23.4874 19.5815 23.0489 20.5036 22.4208C21.9595 21.4254 22.6146 19.9441 22.7359 18.9605H16.7183V15.0024H26.9701C27.1277 15.666 27.2006 16.3059 27.2006 17.1829C27.2006 20.4299 26.0116 23.1675 23.9491 25.028C22.1414 26.6634 19.6664 27.6115 16.7183 27.6115C12.4477 27.6115 8.75954 25.2176 6.96398 21.7335C6.22395 20.2877 5.79932 18.6642 5.79932 16.9459C5.79932 15.2275 6.22395 13.604 6.96398 12.1582C8.75954 8.67409 12.4477 6.28027 16.7183 6.28027C19.6664 6.28027 22.1293 7.33499 24.0219 9.05333L20.9403 11.9923Z" fill="#121723"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+
   <script src="js/choices/choices.min.js"></script>
   <script src="js/choices/choices_plugin_settings.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

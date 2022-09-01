@@ -111,18 +111,18 @@ const headerEnableNaw = document.querySelector('.btn-svg-enable-naw'),
       }
 
 
-const buttons = document.querySelectorAll('.podcast__btn')
+const buttons = document.querySelectorAll('.podcast__btn');
 
-      for (let button of buttons) {
-        button.addEventListener("click", e => {
-          let activeBtn = document.querySelector('button.pause');
-          if (activeBtn && activeBtn !== e.target) {
-            activeBtn.classList.remove('pause');
-            button.classList.toggle('pause');
-          }
-          button.classList.toggle('pause');
-        });
-      }
+for (let button of buttons) {
+  button.addEventListener("click", e => {
+    let activeBtn = document.querySelector('button.pause');
+    if (activeBtn && activeBtn !== e.target) {
+      activeBtn.classList.remove('pause');
+      button.classList.toggle('pause');
+    }
+    button.classList.toggle('pause');
+  });
+}
 
 document.querySelector('.podcast__more-btn').addEventListener('click', function () {
   let elements = document.getElementsByClassName('podcast__item');
@@ -134,3 +134,29 @@ document.querySelector('.podcast__more-btn').addEventListener('click', function 
 document.querySelector('.podcast__more-btn').addEventListener('click', function () {
   document.querySelector('.podcast__more-btn').classList.toggle('podcasts-btns__btn--passive')
 });
+
+
+
+$(document).ready(function() {
+  $("a.header__link").click(function(){
+    $("html, body").animate({
+      scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+      duration: 1000,
+      easing: "swing"
+    });
+    return false;
+  });
+});
+
+const headerBtn = document.querySelector('.header__btn'),
+      modalWrapper = document.querySelector('.modal-wrapper'),
+      modalBtnTop = document.querySelector('.modal__btn-top');
+
+      headerBtn.addEventListener('click', function () {
+        modalWrapper.classList.add('modal-wrapper_open');
+      })
+
+      modalBtnTop.addEventListener('click', function () {
+        modalWrapper.classList.remove('modal-wrapper_open');
+      });
