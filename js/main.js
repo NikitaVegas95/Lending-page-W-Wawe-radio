@@ -160,3 +160,14 @@ const headerBtn = document.querySelector('.header__btn'),
       modalBtnTop.addEventListener('click', function () {
         modalWrapper.classList.remove('modal-wrapper_open');
       });
+
+
+
+function play() {
+  const audio = new Audio('/media/Monolink_-_Amniotic_64436584.mp3');
+  audio.play();
+}
+function pause() {
+  const audio = new Audio('/media/Monolink_-_Amniotic_64436584.mp3');
+  audio.pause();
+}

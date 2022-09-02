@@ -1710,6 +1710,16 @@ body {
   position: relative;
 }
 
+.playlists__item-btn::before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  left: -1px;
+  bottom: -1px;
+  opacity: 0.8;
+}
+
 .playlists__item-country {
   width: 24px;
   height: 20px;
