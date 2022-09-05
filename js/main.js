@@ -167,7 +167,3 @@ function play() {
   const audio = new Audio('/media/Monolink_-_Amniotic_64436584.mp3');
   audio.play();
 }
-function pause() {
-  const audio = new Audio('/media/Monolink_-_Amniotic_64436584.mp3');
-  audio.pause();
-}
