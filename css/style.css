@@ -661,7 +661,7 @@ body {
   margin-bottom: 60px;
 }
 
-.podcast__item__data {
+.podcast__item-data {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,7 +799,7 @@ body {
   display: block;
 }
 
-.podcast__item__span__wrapper label {
+.podcast__item-wrapper label {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -828,34 +828,34 @@ body {
   display: grid;
 }
 
-.podcast__item__img__wrapper {
+.podcast__img-wrapper {
   position: relative;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
 }
 
-.podcast__content__wrapper {
+.podcast__content-wrapper {
   position: relative;
   padding: 20px 30px 16px 30px;
 }
 
-.podcast__item__span__wrapper {
+.podcast__item-wrapper {
   padding-top: 8px;
   padding-left: 30px;
   border-top: 1px solid var(--light-gray-color);
 }
 
-.podcast__item__label {
+.podcast__item-label {
   position: relative;
   cursor: pointer;
 }
 
-.podcast__item__btn {
+.podcast__item-btn {
   position: absolute;
 }
 
-.podcast__item-europ__label-heard{
+.podcast__item-label__heard{
   padding-left: 16px;
 }
 
@@ -1748,42 +1748,50 @@ body {
 .playlists__item-btn:hover .playlists__item-wrapper{
   background-color: var(--medium-purpul-color);
   border-color: var(--medium-purpul-color);
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .playlists__item-btn:focus .playlists__item-wrapper{
   background-color: var(--light-purpul-color);
   border-color: var(--light-purpul-color);
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .playlists__item-btn:hover::before {
   background-color: var(--deep-darck-color);
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
 .playlists__item-btn:focus::before {
   background-color: var(--deep-darck-color);
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
 .playlists__item-btn:hover .playlists__item-title {
   color: var(--white-color);
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .playlists__item-btn:focus .playlists__item-title {
   color: var(--white-color);
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .playlists__item-btn:hover .playlists__item-text {
   color: var(--white-color);
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .playlists__item-btn:focus .playlists__item-text {
   color: var(--white-color);
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -2326,7 +2334,7 @@ body {
   background-position: -8px 275px;
 }
 
-.header__logo-link {
+.footer__logo-link {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;

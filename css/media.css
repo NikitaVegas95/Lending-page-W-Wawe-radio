@@ -727,7 +727,7 @@
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
   }
-  .header__logo-link {
+  .footer__logo-link {
     margin-bottom: 32px;
     padding-left: 47px;
     -ms-grid-row: 1;
@@ -1168,7 +1168,7 @@
     line-height: 12px;
   }
 
-  .podcast__item__span__wrapper label {
+  .podcast__item-wrapper label {
     font-size: 12px;
     line-height: 12px;
   }
@@ -1182,7 +1182,7 @@
     font-size: 24px;
   }
 
-  .podcast__content__wrapper {
+  .podcast__content-wrapper {
     padding: 12px 16px 8px 16px;
   }
 
@@ -1190,7 +1190,7 @@
     margin-bottom: 8px;
   }
 
-  .podcast__item__span__wrapper {
+  .podcast__item-wrapper {
     padding-top: 2px;
     padding-left: 35px;
     padding-bottom: 7px;
@@ -1655,7 +1655,7 @@
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
-  .header__logo-link {
+  .footer__logo-link {
     margin-bottom: 0;
     padding-left: 48px;
     -ms-grid-row: 1;
