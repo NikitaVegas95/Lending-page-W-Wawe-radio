@@ -1466,17 +1466,17 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-        <form class="about-us__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <form class="about-us__form" method="post" id="form" action="#" autocomplete="off">
           <label class="about-us__input-text__label">
             <textarea class="about-us__input-text" placeholder="Что скажете?"></textarea>
           </label>
-          <label class="about-us__input-name__label">
-            <input class="about-us__input-name" placeholder="Имя" type="text">
+          <label for="name" class="about-us__input-name__label">
+            <input class="about-us__input-name" placeholder="Имя" type="text" id="name" name="name" autocomplete="off">
           </label>
-          <label class="about-us__input-email__label">
-            <input class="about-us__input-email" placeholder="Email" type="email">
+          <label for="email" class="about-us__input-email__label">
+            <input class="about-us__input-email" placeholder="Email" type="email" id="email" name="email" autocomplete="off">
           </label>
-          <button class="btn-reset about-us__btn">Отправить</button>
+          <button class="btn-reset about-us__btn" id="submit-btn">Отправить</button>
           <label class="about-us__label" for="about-us-checkbox">
             <input id="about-us-checkbox" class="about-us__checkbox" type="checkbox" checked>
             <span class="about-us__checkbox-custom"></span>
