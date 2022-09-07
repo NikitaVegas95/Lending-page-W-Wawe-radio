@@ -2130,6 +2130,7 @@ body {
 }
 
 .about-us__input-name__label {
+  position: relative;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / span 5;
@@ -2187,6 +2188,7 @@ body {
 }
 
 .about-us__input-email__label {
+  position: relative;
   -ms-grid-column: 6;
   -ms-grid-column-span: 5;
   grid-column: 6 / span 5;
@@ -2669,4 +2671,14 @@ body {
 
 .modal__link {
   padding: 4px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 5px;
+  left: 34px;
+}
+
+.just-validate-error-field {
+  border-color: red;
 }

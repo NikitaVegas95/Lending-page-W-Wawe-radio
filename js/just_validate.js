@@ -1,9 +1,9 @@
 //валидатор
 
-const validate = new window.JustValidate('form', {
+const validate = new window.JustValidate('#form', {
   errorLabelStyle: {
     color: 'red',
-  }
+  },
 });
 
 validate.addField('#name', [
