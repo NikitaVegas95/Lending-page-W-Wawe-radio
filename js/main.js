@@ -39,7 +39,7 @@ const swiper = new Swiper('.swiper', {
 //--------------------------tabs------------------------------------------
 
 
-let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
+let tabsBtn = document.querySelectorAll('.tabs-nav');
 let tabsItem = document.querySelectorAll('.tabs-item');
 
 tabsBtn.forEach(function (element){
