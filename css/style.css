@@ -87,6 +87,10 @@ body {
   grid-area: footer;
 }
 
+.display {
+  display: none;
+}
+
 /* var. */
 
 :root {  /* colors */
